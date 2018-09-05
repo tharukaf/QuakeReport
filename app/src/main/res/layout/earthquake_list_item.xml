@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:gravity="center_vertical"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:paddingTop="11dp"
+    android:paddingBottom="11dp">
+
+    <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="16sp"
+    android:id="@+id/textViewMagnitude"
+    android:textStyle="bold"
+    tools:text="5.7"
+    android:gravity="center"
+    android:background="@drawable/magnitude_background_shape"
+    android:textColor="@android:color/white"
+    android:padding="1dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4.5"
+        android:orientation="vertical"
+        android:layout_marginLeft="14dp">
+
+        <TextView
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_width="wrap_content"
+            android:textSize="11.5sp"
+            android:id="@+id/textViewRelativeLocation"
+            tools:text="62KM N OF"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:layout_marginTop="1.3dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Msanga,Tanzania" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:textSize="11sp"
+            android:id="@+id/textViewDate"
+            tools:text="Jul 12,2016" />
+        <TextView
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_gravity="end"
+            android:textSize="11sp"
+            android:id="@+id/textViewTime"
+            tools:text="8.01 PM"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
